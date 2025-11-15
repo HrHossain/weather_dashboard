@@ -1,0 +1,16 @@
+
+import { WeatherContext } from '../context'
+import { useWeather } from '../hooks'
+
+const WeatherProvider = ({children}) => {
+    const {loading,error,weatherData} = useWeather()
+  return (
+    <WeatherContext.Provider value={{loading,error,weatherData}}>
+      {
+        loading.state ? loading.message : children
+      }
+    </WeatherContext.Provider>
+  )
+}
+
+export default WeatherProvider

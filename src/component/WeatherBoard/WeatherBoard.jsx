@@ -1,10 +1,21 @@
 
+import { useContext } from "react";
 import AddToFavourite from "./AddToFavourite";
 import WeatherCondition from "./WeatherCondition";
 import WeatherHeadline from "./WeatherHeadline";
+import { WeatherContext } from "../../context";
 
 function WeatherBoard() {
-  
+   const weatherData = useContext(WeatherContext)
+
+  const {location,
+    climate,
+    temperature,
+    maxTemperature,
+    minTemperature,
+    humidity,
+    cloudPercentage,
+    wind,} = weatherData
   return (
     <main>
       <section className="">

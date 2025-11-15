@@ -1,14 +1,14 @@
 import Header from "./component/Header/Header";
 import WeatherBoard from "./component/WeatherBoard/WeatherBoard";
+import Page from "./page";
+import WeatherProvider from "./provider/WeatherProvider";
 
 
 export default function App() {
   return (
-   
-          <div className="bg-red-700 grid place-items-center h-screen">
-            <Header />
-            <WeatherBoard />
-          </div>
-       
+   <WeatherProvider>
+    <Page/>
+   </WeatherProvider>
+        
   );
 }
