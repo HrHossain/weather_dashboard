@@ -1,4 +1,5 @@
 
+import WeatherLoadingFullScreen from '../component/Loading/WeatherLoadingFullScreen'
 import { WeatherContext } from '../context'
 import { useWeather } from '../hooks'
 
@@ -7,7 +8,7 @@ const WeatherProvider = ({children}) => {
   return (
     <WeatherContext.Provider value={{loading,error,weatherData}}>
       {
-        loading.state ? loading.message : children
+        loading.state ? <WeatherLoadingFullScreen message={loading.message}/> : children
       }
     </WeatherContext.Provider>
   )

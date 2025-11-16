@@ -5,7 +5,7 @@ import LocationModal from "./LocationModal";
 import Logo from "./Logo";
 import Search from "./Search";
 
-function Header(props) {
+function Header() {
   
   const [showFav , setShowFav] = useState(false)
   const handleToggle = ()=>{

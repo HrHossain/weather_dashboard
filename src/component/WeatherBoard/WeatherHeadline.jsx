@@ -46,7 +46,7 @@ function WeatherHeadline() {
         return SunnyIcon;
     }
   }
-  console.log("rendering...")
+  
   return (
     <div>
       <div className="max-md:flex items-center justify-between md:-mt-10">

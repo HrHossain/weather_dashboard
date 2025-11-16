@@ -44,8 +44,6 @@ const [bgImage,setBgImage] = useState('')
     setBgImage(currentImg)
 
   },[weatherData.climate])
-  
-console.log(x)
   return (
       <div
       style={{backgroundImage:`url(${bgImage})`}}
