@@ -25,7 +25,7 @@ function AddToFavourite() {
     useEffect(()=>{
       setIsFavourite(found)
     },[found])
-
+console.log(favourites)
 
   return (
     <div className="md:col-span-2">

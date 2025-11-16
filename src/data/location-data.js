@@ -24,12 +24,22 @@ const data = [
     latitude: 23.015913,
     longitude: 91.397583,
   },
+  {
+    location: "India",
+    latitude: 20.5937,
+    longitude: 78.9629,
+  },
+  {
+    location: "Pakistan",
+    latitude: 30.3753,
+    longitude: 69.3451,
+  },
 ];
 function getLocation() {
   return data;
 }
 function getLocationByName(location) {
-  console.log(location)
+
   if (!location) return null;
   const filtered = data.filter(
     (item) => item.location.toLowerCase() === location.toLowerCase()
