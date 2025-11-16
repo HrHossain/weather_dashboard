@@ -1,5 +1,3 @@
-
-
 export function getFormattedTime(value , type , inMS){
 
     if(!type){

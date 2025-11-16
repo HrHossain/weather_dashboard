@@ -7,7 +7,7 @@ const Page = () => {
       <div className="bg-red-700 grid place-items-center h-screen">
             <Header />
             <WeatherBoard />
-          </div>
+     </div>
        
     
   )
