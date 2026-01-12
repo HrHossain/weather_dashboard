@@ -10,25 +10,27 @@ function Search() {
 
   const userTrigger = ()=>{
     if(query.trim() !== ""){
-      const value = getLocationByName(query)
-      setSelectLocation(value)
+      return getLocationByName(query)
+      
     }
     
   }
+ 
+const typeSearch = userTrigger()
 
   useEffect(()=>{
     if(!query) return;
     const timer = setTimeout(()=>{
-      userTrigger()
-      console.log(selectLocation)
+      setSelectLocation(typeSearch)
+      
     },600)
 
      return ()=>clearTimeout(timer)
-  },[query])
+  },[typeSearch])
 
   const handleSearch=(e)=>{
     e.preventDefault()
-     userTrigger()
+     setSelectLocation(typeSearch)
      
   }
   

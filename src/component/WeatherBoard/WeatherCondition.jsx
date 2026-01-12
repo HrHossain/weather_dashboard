@@ -18,7 +18,7 @@ function WeatherCondition() {
     wind
   } = weatherData
 
-console.log(error)
+
   return (
     <div>
       <p className="text-sm lg:text-lg font-bold uppercase mb-8">

@@ -1,4 +1,4 @@
-import x, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 import { useContext } from 'react'
 import Header from './component/Header/Header'
 import WeatherBoard from './component/WeatherBoard/WeatherBoard'
