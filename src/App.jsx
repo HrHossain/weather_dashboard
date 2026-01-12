@@ -1,5 +1,5 @@
 
-import Page from "./page";
+import Page from "./Page.jsx";
 import FavouriteProvider from "./provider/FavouriteProvider";
 import LocationProvider from "./provider/LocationProvider";
 import WeatherProvider from "./provider/WeatherProvider";
